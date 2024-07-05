@@ -1,0 +1,251 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.parent {
+  width: 100%;
+  height: 100vh;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(../images/9.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.head {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  flex-wrap: wrap;
+}
+.head h1 {
+  margin: 0 15px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+ul {
+  list-style: none;
+  display: flex;
+  font-size: 1.2rem;
+  padding: 0;
+}
+ul li {
+  margin-left: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+ul li:hover {
+  color: #379ff6;
+}
+.but {
+  border-radius: 5px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #ffffff;
+  padding: 10px 20px;
+  background-color: #379ff6;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+.but:hover {
+  background-color: #2b7bbf;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 100px;
+  flex-wrap: wrap;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.about p {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.about span {
+  color: #3e96e0;
+}
+.pharg {
+  color: #ffffff;
+  line-height: 1.6;
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.join {
+  width: 120px;
+  height: 50px;
+  background-color: #3e96e0;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px auto;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+.join:hover {
+  background-color: #272727;
+}
+
+.log {
+  border-radius: 5px;
+  color: white;
+  background-color: rgba(24, 24, 24, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #379ff6;
+}
+.email input,
+.pass input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  border-bottom: 2px solid #444849;
+  width: 100%;
+  height: 35px;
+  margin-top: 5px;
+}
+
+.log input {
+  margin: 20px 0;
+  padding: 5px;
+  font-size: 1rem;
+}
+
+.log input::placeholder {
+  color: #cfcfcf;
+}
+
+.one {
+  width: 60%;
+  background-color: #379ff6;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.3s;
+}
+.one:hover {
+  background-color: #2b7bbf;
+}
+.sign {
+  text-align: center;
+  margin-top: 15px;
+}
+.i {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.i i {
+  margin: 10px;
+  font-size: 2rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.i i:hover {
+  color: #379ff6;
+}
+.for {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.6;
+  margin-top: 25px;
+}
+.fin {
+  display: flex;
+}
+.fin p {
+  margin-right: 5px;
+  color: #379ff6;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .parent {
+    padding: 5px;
+    height: fit-content;
+  }
+
+  .head {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .head ul {
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  .section {
+    flex-direction: column;
+  }
+
+  .content {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .about p {
+    font-size: 2rem;
+  }
+
+  .head h1 {
+    font-size: 2rem;
+  }
+}
